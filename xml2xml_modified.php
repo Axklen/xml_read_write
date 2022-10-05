@@ -14,7 +14,6 @@ $dom = new DOMDocument();
 $dom->encoding = 'utf-8';
 $dom->xmlVersion = '1.0';
 $dom->formatOutput = true;
-
 $root = $dom->createElement('n24news');
 
 for ($i = 0; $i < $article_count; $i++) {
@@ -52,4 +51,11 @@ $dom->appendChild($root);
 
 $dom->formatOutput = true;
 $dom->save($output_file_name);
-echo "$output_file_name has been successfully created";
+
+// logging
+if (file_exists($output_file_name)) {
+  $message = "$output_file_name has been successfully created";
+} else {
+  $message = "creating $output_file_name failed";
+}
+echo $message;

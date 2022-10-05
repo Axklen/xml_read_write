@@ -25,4 +25,11 @@ for ($i = 0; $i < $article_count; $i++) {
 // encode and write json file
 $json = json_encode($array, JSON_PRETTY_PRINT);
 $bytes = file_put_contents($output_file_name, $json);
-echo "$output_file_name has been successfully created";
+
+// logging
+if (file_exists($output_file_name)) {
+  $message = "$output_file_name has been successfully created";
+} else {
+  $message = "creating $output_file_name failed";
+}
+echo $message;
