@@ -5,13 +5,13 @@ INPUT_FILE = "politik_input.xml"
 OUTPUT_FILE = "my_output_py.xml"
 
 # read xml file
-def read_xml_file(filename:str) -> BeautifulSoup:
+def read_xml_file(filename: str) -> BeautifulSoup:
     with open(filename, "r") as file:
         return BeautifulSoup(file, features="lxml-xml")
 
 
 # create json
-def gen_json(items:list) -> list:
+def gen_json(items: list) -> list:
     data = []
     for item in items:
         data.append(
@@ -30,7 +30,7 @@ def gen_json(items:list) -> list:
 
 
 # write json
-def write_json(data:list) -> None:
+def write_json(data: list) -> None:
     with open(OUTPUT_FILE, "w") as f:
         json.dump(data, f, indent=2)
         print(f"New json file is created: {OUTPUT_FILE}")
@@ -39,7 +39,7 @@ def write_json(data:list) -> None:
 def main() -> None:
     soup = read_xml_file(INPUT_FILE)
     items = soup.find_all("item", limit=3)
-    #TODO: get images, crop and save
+    # TODO: get images, crop and save
     new_json = gen_json(items)
     write_json(new_json)
 
