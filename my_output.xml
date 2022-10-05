@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<n24news>
+  <news>
+    <subline>Angst vor Kriegsdienst</subline>
+    <headline>200.000 Russen in Kasachstan</headline>
+    <source>Quelle: </source>
+    <textmessage>Seit der Teilmobilmachung des russischen Militärs vor knapp zwei Wochen sind bereits mehr als 200.000 russische Staatsbürger ins Nachbarland Kasachstan in Zentralasien eingereist.</textmessage>
+    <published type="timestamp">Tue, 04 Oct 2022 08:31:32 GMT</published>
+    <image type="remotefile">https://weltooh.de/main/img736x414/some_cropped_image_0.jpg</image>
+    <thumb type="remotefile"/>
+    <video type="remotefile"/>
+    <webUrl>https://www.welt.de/out-of-home/politik/out-of-home241402563/200-000-Russen-in-Kasachstan-Angst-vor-Kriegsdienst.html</webUrl>
+  </news>
+  <news>
+    <subline>USA</subline>
+    <headline>Weitere Sanktionen gegen den Iran</headline>
+    <source>Quelle: </source>
+    <textmessage>Die USA haben weitere Sanktionen gegen den Iran angekündigt. Die Maßnahmen seien eine Reaktion auf das gewaltsame Vorgehen gegen „friedliche Demonstranten“ im Land, erklärte US-Präsident Joe Biden.</textmessage>
+    <published type="timestamp">Tue, 04 Oct 2022 07:23:52 GMT</published>
+    <image type="remotefile">https://weltooh.de/main/img736x414/some_cropped_image_1.jpg</image>
+    <thumb type="remotefile"/>
+    <video type="remotefile"/>
+    <webUrl>https://www.welt.de/out-of-home/politik/out-of-home241401349/Weitere-Sanktionen-gegen-den-Iran-USA.html</webUrl>
+  </news>
+  <news>
+    <subline>Rakete in Nordkorea</subline>
+    <headline>Raketenwarnsystem in Japan aktiviert</headline>
+    <source>Quelle: </source>
+    <textmessage>Nach dem Abschuss einer nicht identifizierten ballistischen Rakete durch Nordkorea hat Japan in einer Warnung Bewohner aufgefordert, sich in Schutzräume zu begeben. Die Rakete sei offenbar im Meer gelandet.</textmessage>
+    <published type="timestamp">Tue, 04 Oct 2022 04:17:00 GMT</published>
+    <image type="remotefile">https://weltooh.de/main/img736x414/some_cropped_image_2.jpg</image>
+    <thumb type="remotefile"/>
+    <video type="remotefile"/>
+    <webUrl>https://www.welt.de/out-of-home/politik/out-of-home241399671/Raketenwarnsystem-in-Japan-aktiviert-Rakete-in-Nordkorea.html</webUrl>
+  </news>
+</n24news>
