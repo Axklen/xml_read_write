@@ -1,7 +1,7 @@
 <?php
 
+$article_count = 3;
 $input_file_name = 'politik_input.xml';
-
 $output_file_name = 'my_output.xml';
 
 // read xml to object
@@ -17,7 +17,7 @@ $dom->formatOutput = true;
 
 $root = $dom->createElement('n24news');
 
-for ($i = 0; $i < 3; $i++) {
+for ($i = 0; $i < $article_count; $i++) {
   $news_node = $dom->createElement('news');
   $child_node_subline = $dom->createElement('subline', $xml->channel->item[$i]->children($namespaces['welt'])->topic);
   $child_node_headline = $dom->createElement('headline', $xml->channel->item[$i]->title);
