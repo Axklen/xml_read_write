@@ -14,7 +14,7 @@ def read_xml_file(filename) -> BeautifulSoup:
 
 
 # create xml
-def gen_xml_file(items: list) -> list:
+def gen_new_xml(items: list) -> list:
     doc, tag, text, line = Doc().ttl()
     doc.asis('<?xml version="1.0" encoding="UTF-8"?>')
 
@@ -57,8 +57,8 @@ def write_json_file(data) -> None:
 def main() -> None:
     soup = read_xml_file(INPUT_FILE)
     items = soup.find_all("item", limit=3)
-    #TODO: get images, crop and save
-    new_xml_data = gen_xml_file(items)
+    # TODO: get images, crop and save
+    new_xml_data = gen_new_xml(items)
     write_json_file(new_xml_data)
 
 
