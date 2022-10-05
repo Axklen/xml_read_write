@@ -9,7 +9,6 @@ $xml = simplexml_load_file($input_file_name)
   or die('Error: cannot read file or create object');
 $namespaces = $xml->getNamespaces(true);
 
-
 // create output xml
 $dom = new DOMDocument();
 $dom->encoding = 'utf-8';
@@ -51,5 +50,6 @@ for ($i = 0; $i < 3; $i++) {
 }
 $dom->appendChild($root);
 
+$dom->formatOutput = true;
 $dom->save($output_file_name);
 echo "$output_file_name has been successfully created";
