@@ -7,43 +7,60 @@ INPUT_FILE = "politik_input.xml"
 OUTPUT_FILE = "my_output_py.xml"
 
 # read xml file
-with open(INPUT_FILE) as file:
-    soup = BeautifulSoup(file, features="lxml-xml")
+def read_xml_file(filename) -> BeautifulSoup:
+    with open(filename) as file:
+        soup = BeautifulSoup(file, features="lxml-xml")
+    return soup
 
-items = soup.find_all("item", limit=3)
 
 # create xml
-doc, tag, text, line = Doc().ttl()
-doc.asis('<?xml version="1.0" encoding="UTF-8"?>')
+def gen_xml_file(items: list) -> list:
+    doc, tag, text, line = Doc().ttl()
+    doc.asis('<?xml version="1.0" encoding="UTF-8"?>')
 
-with tag("n24news"):
-    for item in items:
-        with tag("news"):
-            with tag("subline"):
-                text(item.find("welt:topic").string)
-            with tag("headline"):
-                text(item.find("title").string)
-            with tag("source"):
-                text(f"Quelle: {item.find('dc:source').string}")
-            with tag("textmessage"):
-                text(html.escape(item.find("description").string))
-            with tag("published", type="timestamp"):
-                text(item.find("pubDate").string)
-            with tag("image", type="remotefile"):
-                text("https://weltooh.de/main/img736x414/some_generated_image.jpg")
-            doc.stag("thumb", type="timestamp")
-            doc.stag("video", type="timestamp")
-            with tag("webUrl"):
+    with tag("n24news"):
+        for item in items:
+            with tag("news"):
+                with tag("subline"):
+                    text(item.find("welt:topic").string)
+                with tag("headline"):
+                    text(item.find("title").string)
+                with tag("source"):
+                    text(f"Quelle: {item.find('dc:source').string}")
+                with tag("textmessage"):
+                    text(html.escape(item.find("description").string))
+                with tag("published", type="timestamp"):
+                    text(item.find("pubDate").string)
+                with tag("image", type="remotefile"):
+                    text("https://weltooh.de/main/img736x414/some_generated_image.jpg")
+                doc.stag("thumb", type="timestamp")
+                doc.stag("video", type="timestamp")
+                with tag("webUrl"):
 
-                text(html.escape(item.find("link").string))
-result = indent(
-    doc.getvalue(),
-    indentation="    ",
-    newline="\n",
-    # indent_text = True
-)
+                    text(html.escape(item.find("link").string))
+    result = indent(
+        doc.getvalue(),
+        indentation="    ",
+        newline="\n",
+        # indent_text = True
+    )
+    return result
+
 
 # write xml file
-with open(OUTPUT_FILE, "w") as file:
-    file.write(result)
-    print("New json file is created")
+def write_json_file(data) -> None:
+    with open(OUTPUT_FILE, "w") as file:
+        file.write(data)
+        print("New json file is created")
+
+
+def main() -> None:
+    soup = read_xml_file(INPUT_FILE)
+    items = soup.find_all("item", limit=3)
+    #TODO: get images, crop and save
+    new_xml_data = gen_xml_file(items)
+    write_json_file(new_xml_data)
+
+
+if __name__ == "__main__":
+    main()
