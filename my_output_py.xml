@@ -1,36 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<n24news>
-    <news>
-        <subline>Angst vor Kriegsdienst</subline>
-        <headline>200.000 Russen in Kasachstan</headline>
-        <source>Quelle: WELT, dpa</source>
-        <textmessage>Seit der Teilmobilmachung des russischen Militärs vor knapp zwei Wochen sind bereits mehr als 200.000 russische Staatsbürger ins Nachbarland Kasachstan in Zentralasien eingereist.</textmessage>
-        <published type="timestamp">Tue, 04 Oct 2022 08:31:32 GMT</published>
-        <image type="remotefile">https://weltooh.de/main/img736x414/some_generated_image.jpg</image>
-        <thumb type="timestamp" />
-        <video type="timestamp" />
-        <webUrl>https://www.welt.de/out-of-home/politik/out-of-home241402563/200-000-Russen-in-Kasachstan-Angst-vor-Kriegsdienst.html</webUrl>
-    </news>
-    <news>
-        <subline>USA</subline>
-        <headline>Weitere Sanktionen gegen den Iran</headline>
-        <source>Quelle: WELT, dpa, Getty</source>
-        <textmessage>Die USA haben weitere Sanktionen gegen den Iran angekündigt. Die Maßnahmen seien eine Reaktion auf das gewaltsame Vorgehen gegen „friedliche Demonstranten“ im Land, erklärte US-Präsident Joe Biden.</textmessage>
-        <published type="timestamp">Tue, 04 Oct 2022 07:23:52 GMT</published>
-        <image type="remotefile">https://weltooh.de/main/img736x414/some_generated_image.jpg</image>
-        <thumb type="timestamp" />
-        <video type="timestamp" />
-        <webUrl>https://www.welt.de/out-of-home/politik/out-of-home241401349/Weitere-Sanktionen-gegen-den-Iran-USA.html</webUrl>
-    </news>
-    <news>
-        <subline>Rakete in Nordkorea</subline>
-        <headline>Raketenwarnsystem in Japan aktiviert</headline>
-        <source>Quelle: WELT, dpa</source>
-        <textmessage>Nach dem Abschuss einer nicht identifizierten ballistischen Rakete durch Nordkorea hat Japan in einer Warnung Bewohner aufgefordert, sich in Schutzräume zu begeben. Die Rakete sei offenbar im Meer gelandet.</textmessage>
-        <published type="timestamp">Tue, 04 Oct 2022 04:17:00 GMT</published>
-        <image type="remotefile">https://weltooh.de/main/img736x414/some_generated_image.jpg</image>
-        <thumb type="timestamp" />
-        <video type="timestamp" />
-        <webUrl>https://www.welt.de/out-of-home/politik/out-of-home241399671/Raketenwarnsystem-in-Japan-aktiviert-Rakete-in-Nordkorea.html</webUrl>
-    </news>
-</n24news>
+[
+  {
+    "headline": "200.000 Russen in Kasachstan",
+    "subline": "Angst vor Kriegsdienst",
+    "text": "Seit der Teilmobilmachung des russischen Milit\u00e4rs vor knapp zwei Wochen sind bereits mehr als 200.000 russische Staatsb\u00fcrger ins Nachbarland Kasachstan in Zentralasien eingereist.",
+    "img": "https://weltooh.de/main/img736x414/some_generated_img.jpg",
+    "source": "Quelle: WELT, dpa",
+    "video": ""
+  },
+  {
+    "headline": "Weitere Sanktionen gegen den Iran",
+    "subline": "USA",
+    "text": "Die USA haben weitere Sanktionen gegen den Iran angek\u00fcndigt. Die Ma\u00dfnahmen seien eine Reaktion auf das gewaltsame Vorgehen gegen \u201efriedliche Demonstranten\u201c im Land, erkl\u00e4rte US-Pr\u00e4sident Joe Biden.",
+    "img": "https://weltooh.de/main/img736x414/some_generated_img.jpg",
+    "source": "Quelle: WELT, dpa, Getty",
+    "video": ""
+  },
+  {
+    "headline": "Raketenwarnsystem in Japan aktiviert",
+    "subline": "Rakete in Nordkorea",
+    "text": "Nach dem Abschuss einer nicht identifizierten ballistischen Rakete durch Nordkorea hat Japan in einer Warnung Bewohner aufgefordert, sich in Schutzr\u00e4ume zu begeben. Die Rakete sei offenbar im Meer gelandet.",
+    "img": "https://weltooh.de/main/img736x414/some_generated_img.jpg",
+    "source": "Quelle: WELT, dpa",
+    "video": ""
+  }
+]
