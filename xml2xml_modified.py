@@ -3,8 +3,8 @@ from yattag.doc import Doc
 from yattag.indentation import indent
 import html
 
-INPUT_FILE = "politik_input.xml"
-OUTPUT_FILE = "my_output_py.xml"
+INPUT_FILE = "src/politik_input.xml"
+OUTPUT_FILE = "out/my_output_py.xml"
 
 # read xml file
 def read_xml_file(filename) -> BeautifulSoup:

@@ -1,8 +1,8 @@
 <?php
 
 $article_count = 3;
-$input_file_name = 'politik_input.xml';
-$output_file_name = 'my_output.json';
+$input_file_name = 'src/politik_input.xml';
+$output_file_name = 'out/my_output.json';
 
 // read xml to object
 $xml = simplexml_load_file($input_file_name)

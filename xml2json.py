@@ -1,8 +1,8 @@
 from bs4 import BeautifulSoup
 import html, json
 
-INPUT_FILE = "politik_input.xml"
-OUTPUT_FILE = "my_output_py.xml"
+INPUT_FILE = "src/politik_input.xml"
+OUTPUT_FILE = "out/my_output_py.json"
 
 # read xml file
 def read_xml_file(filename: str) -> BeautifulSoup:
