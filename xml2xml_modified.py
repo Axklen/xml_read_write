@@ -36,7 +36,6 @@ def gen_new_xml(items: list) -> list:
                 doc.stag("thumb", type="timestamp")
                 doc.stag("video", type="timestamp")
                 with tag("webUrl"):
-
                     text(html.escape(item.find("link").string))
     result = indent(
         doc.getvalue(),
